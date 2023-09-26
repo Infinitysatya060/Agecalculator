@@ -1,0 +1,78 @@
+:root{
+    --white:hsl(0, 0%, 100%);
+    --purpul:hsl(259, 100%, 65%);
+    --red:hsl(0, 100%, 67%);
+    --offwhite:hsl(0, 0%, 94%);
+    --black:hsl(0, 0%, 8%);
+    --Light-grey: hsl(0, 0%, 86%);
+    --Smokey-grey: hsl(0, 1%, 44%);
+}
+body{
+    background-color: var(--offwhite);
+}
+
+.main{
+    display: grid;
+    height: 600px;
+    width: 600px;
+    background-color: var(--white);
+    margin: 0 auto;
+    margin-top: 40px;
+    border-radius: 30px;
+    border-bottom-right-radius: 30%;
+    padding-left: 80px;
+    padding-right: 80px;
+    
+}
+.top{
+    display: flex;
+    justify-content: left;
+    gap: 5px;
+    height: 180px;
+    border-bottom: 1px solid var(--Light-grey) ;
+  
+}
+.text{
+    color: var(--Smokey-grey);
+    font-size: 1.3rem;
+}
+.top div{
+    margin-top: 40px;
+}
+.top input{
+    height: 50px;
+    font-size: 20px;
+    font-weight: bolder;
+    color: var(--black);
+
+    width: 150px;
+    border:1px solid var(--Light-grey);
+    outline: none;
+}
+#btn{
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    position: relative;
+    top: 140px;
+    background-color: var(--purpul);
+    color: var(--white);
+    font-size: 1.6rem;
+    border: none;
+    outline: none;
+    cursor: pointer;
+
+}
+.bottom P{
+    font-size:4rem ;
+    color: var(--black);
+    font-weight: 700;
+    
+}
+.bottom span{
+    color: var(--purpul);
+}
+
+#error-day,#error-month,#error-year{
+    color:var(--red);
+}

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age calculator</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="main">
+        <div class="top">
+            <div>
+                <label for="" class="text">Day</label><br>
+                <input type="text" class="day" placeholder="DD" onkeyup="validateDay()"><br>
+                <span id="error-day"></span>
+            </div>
+            <div>
+                <label for="" class="text">Month</label><br>
+                <input type="text" class="month" placeholder="MM" onkeyup="validateMonth()"><br>
+                <span id="error-month"></span>
+            </div>
+            <div>
+                <label for="" class="text">Year</label><br>
+                <input type="text" class="year" placeholder="YY" onkeyup=" validateYear()"><br>
+                <span id="error-year"></span>
+            </div>
+            <button type="button" id="btn">check</button>
+        </div>
+        <div class="bottom">
+            <p><span id="y1">--</span>Year</p>
+            <p><span id="m1">--</span>Months</p>
+            <p><span id="d1">--</span>Day</p>
+        </dibv>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
